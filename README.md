@@ -45,16 +45,61 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 
 4-bit Count Down Counter
-### Procedure
-/* write all the steps invloved */
-
-
+Procedure
 
 ### PROGRAM 
-/*
+
+UP COUNTER
+
+Module upcounter(clk,a);
+
+input clk;
+
+output reg[3:0];
+
+always @(posedge clk)
+
+begin
+
+a[3]=(a[2]&a[1]&a[0])^a[3];
+
+a[2]=(a[1]&a[0])^a[2];
+
+a[1]=(a[0]^a[1]);
+
+a[0]= ^a[0];
+
+end
+
+endmodule
+
+DOWN COUNTER
+
+Module downcounter(clk,a);
+
+input clk;
+
+output reg[3:0]a;
+
+always @(posedge clk)
+
+begin
+
+a[3]=(~a[2]&~a[1]&~a[0])^a[3];
+
+a[2]=(~a[1]&~a[0])^a[2];
+
+a[1]=(~a[0]^a[1]);
+
+a[0]=1^a[0];
+
+end
+
+endmodule
+
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: K.YUVASRI
+RegisterNumber: 212222050061 
 */
 
 
@@ -64,9 +109,14 @@ RegisterNumber:
 
 ### RTL LOGIC UP COUNTER AND DOWN COUNTER  
 
+UP COUNTER
+![f6f7e3ba-bd9a-4848-8429-7ce55bc39891](https://github.com/yuvasri2005/Exp-7-Synchornous-counters-/assets/129949620/76928032-31f8-4e83-8fb9-22c954f8a4c6)
 
 
 
+DOWN COUNTER
+
+![b8f64720-e89a-4fd9-8300-6b755b7b3dc7](https://github.com/yuvasri2005/Exp-7-Synchornous-counters-/assets/129949620/9e1b6f36-edf9-4ed1-a9e5-a330dd469feb)
 
 
 
@@ -74,11 +124,22 @@ RegisterNumber:
 
 ### TIMING DIGRAMS FOR COUNTER  
 
+UP COUNTER
+![f7293de7-9bef-488d-b908-5cc9ce4c2085](https://github.com/yuvasri2005/Exp-7-Synchornous-counters-/assets/129949620/86d2e86c-f278-4c14-9bd7-b6c749a7ecf7)
+
+
+
+DOWN COUNTER
+
+
+![3d624c45-9c4b-45a1-90c1-055a8e87822d](https://github.com/yuvasri2005/Exp-7-Synchornous-counters-/assets/129949620/aeac3ff9-c4b0-4c5c-9d62-cf86b2e3d984)
 
 
 
 
-### TRUTH TABLE 
+
+
+
 
 
 
@@ -86,3 +147,5 @@ RegisterNumber:
 
 
 ### RESULTS 
+
+Thus the implementation of 4 bit synchronous of up and down counter are verified using RTL and Timing Diagram.
