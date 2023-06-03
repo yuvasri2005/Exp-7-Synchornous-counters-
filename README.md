@@ -135,17 +135,23 @@ DOWN COUNTER
 ![3d624c45-9c4b-45a1-90c1-055a8e87822d](https://github.com/yuvasri2005/Exp-7-Synchornous-counters-/assets/129949620/aeac3ff9-c4b0-4c5c-9d62-cf86b2e3d984)
 
 
+TRUTH TABLE:
+
+UP COUNTER
+
+![cb56fc19-6b27-4979-82a7-f54083d28c98](https://github.com/yuvasri2005/Exp-7-Synchornous-counters-/assets/129949620/29043292-8693-4128-8a2d-c584a451ed5e)
+
+
+DOWN COUNTER
+
+
+![4f11f1b0-7aff-4c55-bd61-a17fed34b244](https://github.com/yuvasri2005/Exp-7-Synchornous-counters-/assets/129949620/e1253bba-7624-4f05-960f-4bbe69d99cea)
 
 
 
 
 
 
+Result:
 
-
-
-
-
-### RESULTS 
-
-Thus the implementation of 4 bit synchronous of up and down counter are verified using RTL and Timing Diagram.
+Thus synchornous counters up counter and down counter circuit are studied and the truth table for different logic gates are verified.
